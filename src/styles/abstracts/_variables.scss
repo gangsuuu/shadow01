@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'HaasMediu';
+	src: url('./../Fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+	font-weight: 650; // Regular
+	font-style: normal;
+ }
+
+@mixin sideFrame () {
+  position: fixed;
+	top: 0;
+	right: 0;
+	width: 20vw;
+	height: 100vh;
+	background-color: #748CAB;
+  transition: 0.4s;
+}
+
+@mixin fz($f1){
+	font-size: $f1;
+}
+
+@mixin haas($fz) {
+	font-family: 'HaasMediu';
+	@if $fz != 0 {
+		font-size: $fz;
+	}
+
+}
+
+.t{
+	transform: translateY() ;
+}

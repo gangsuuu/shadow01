@@ -1,0 +1,69 @@
+@use '../../abstracts/variables';
+
+.test{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.section__intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section__introContainer {
+  position: relative;
+  width: 300vw;
+  height: 100vh;
+}
+
+//IntroSvgsWrapper 
+.IntroSvgsWrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.IntroSvg, .Intro__ImagesBox{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Intro__Texts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5vw;
+  @include variables.haas(140px);
+}
+
+.Intro__Text {
+  position: relative;
+}
+
+.Intro__TextRow {
+  overflow: hidden;
+  height: 20vh;
+  display: flex;
+  line-height: 1.2;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  width: 100vw;
+  &.doubleLine {
+    
+  }
+
+  .Intro__text{ 
+    display: flex;
+    gap: 1px;
+    // transform: translateY(150px);
+    span{
+      // font-size: clamp(60px, 10rem, 170px);
+      font-size: 170px;
+    }
+  }
+}

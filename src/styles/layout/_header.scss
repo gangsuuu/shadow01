@@ -1,0 +1,48 @@
+@use '../abstracts/variables';
+
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.header__logoWrap {
+  position: absolute;
+
+  .header__logoBox{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 100px;
+    height: 100px;
+
+    .header__logo {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,125,125,0.4);
+    }
+  }
+}
+
+.header__nav {
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+  nav{
+    ul {
+      li{
+        text-align: right;
+        line-height: 1.2
+      }
+      a {
+        text-transform: uppercase;
+        @include variables.haas(18px);
+
+      }
+    }
+  }
+}

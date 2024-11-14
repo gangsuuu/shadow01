@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "HaasMediu";
+  src: url("./../Fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+  font-weight: 650;
+  font-style: normal;
+}
+.t {
+  transform: translateY();
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li, a {
+  color: black;
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.test {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.section__intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section__introContainer {
+  position: relative;
+  width: 300vw;
+  height: 100vh;
+}
+
+.IntroSvgsWrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.IntroSvg, .Intro__ImagesBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Intro__Texts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5vw;
+  font-family: "HaasMediu";
+  font-size: 140px;
+}
+
+.Intro__Text {
+  position: relative;
+}
+
+.Intro__TextRow {
+  overflow: hidden;
+  height: 20vh;
+  display: flex;
+  line-height: 1.2;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100vw;
+}
+.Intro__TextRow .Intro__text {
+  display: flex;
+  gap: 1px;
+}
+.Intro__TextRow .Intro__text span {
+  font-size: 170px;
+}
+
+.sectionTwo {
+  width: 100vh;
+  height: 100vh;
+  background-color: red;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.header__logoWrap {
+  position: absolute;
+}
+.header__logoWrap .header__logoBox {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 100px;
+  height: 100px;
+}
+.header__logoWrap .header__logoBox .header__logo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 125, 125, 0.4);
+}
+
+.header__nav {
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+}
+.header__nav nav ul li {
+  text-align: right;
+  line-height: 1.2;
+}
+.header__nav nav ul a {
+  text-transform: uppercase;
+  font-family: "HaasMediu";
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */
